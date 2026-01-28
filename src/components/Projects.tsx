@@ -80,9 +80,10 @@ export const Projects = () => {
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  className="w-full h-full object-cover transition-all duration-500 ease-out group-hover:scale-125"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-card via-card/50 to-transparent opacity-60" />
+                <div className="absolute inset-0 bg-gradient-to-t from-card via-card/50 to-transparent opacity-60 transition-opacity duration-300 group-hover:opacity-40" />
+                <div className="absolute inset-0 bg-primary/0 transition-all duration-300 group-hover:bg-primary/10" />
                 <div className="absolute top-4 right-4 flex gap-2">
                   <a
                     href={project.github}
