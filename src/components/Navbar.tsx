@@ -90,9 +90,12 @@ export const Navbar = ({ isDark, toggleTheme }: NavbarProps) => {
               variant="outline" 
               size="sm" 
               className="gap-2 border-primary/50 hover:border-primary hover:bg-primary/10"
+              asChild
             >
-              <Download className="h-4 w-4" />
-              Resume
+              <a href="/resume.pdf" download="Siva_Sai_Kumar_Resume.pdf">
+                <Download className="h-4 w-4" />
+                Resume
+              </a>
             </Button>
           </div>
 
@@ -143,9 +146,12 @@ export const Navbar = ({ isDark, toggleTheme }: NavbarProps) => {
                   variant="outline" 
                   size="sm" 
                   className="gap-2 mt-2 w-fit border-primary/50"
+                  asChild
                 >
-                  <Download className="h-4 w-4" />
-                  Resume
+                  <a href="/resume.pdf" download="Siva_Sai_Kumar_Resume.pdf">
+                    <Download className="h-4 w-4" />
+                    Resume
+                  </a>
                 </Button>
               </div>
             </motion.div>
